@@ -1,30 +1,21 @@
-# Bandit Level 1 → Level 2
+# Bandit Level 2 → Level 3
 
-Site: https://underthewire.tech/century-1
+Site: https://underthewire.tech/century-2
 ## Goal
-> The password for Century2 is the build version of the instance of PowerShell installed on this system.
+> The password for Century3 is the name of the built-in cmdlet that performs the wget like function within 
+> 
+> PowerShell PLUS the name of the file on the desktop.
 
 ## NOTE:
-> – The format is as follows: **.*.*****.****
+> – If the name of the cmdlet is “get-web” and the file on the desktop is named “1234”, the password would be “get-web1234”.
 > 
-> – Include all periods
-> 
-> – Be sure to look for build version and NOT PowerShell version
-
-## IMPORTANT:
-> Once you feel you have completed the Century1 challenge, start a new connection to the server, 
-> 
-> and log in with the username of Century2 and this password will be the answer from Century1. 
-> 
-> If successful, close out the Century1 connection and begin to solve the Century2 challenge. 
-> 
-> This concept is repeated over and over until you reach the end of the game.
+> – The password will be lowercase no matter how it appears on the screen.
 -----------------
 
 The following is needed to SSH with the password from the Slack Channel page:
-> username: century1
+> username: century2
 > 
-> password: century1
+> password: 10.0.14393.4467
 > 
 > server: century.underthewire.tech
 > 
@@ -32,24 +23,36 @@ The following is needed to SSH with the password from the Slack Channel page:
 
 I ssh'ed into the server using:
 ```bash
-ssh -l century1 century.underthewire.tech -p 22
+ssh -l century2 century.underthewire.tech -p 22
 ```
-1. Ran the system variable for the build version for PowerShell:
+1. Ran the `alias` command with `wget` to see if there was a built-in alias:
 ```powershell
-$PSVersionTable
+alias wget
 ```
-2. The above gave this output:
+Output:
 ```powershell
-Name                           Value
-----                           -----
-PSVersion                      5.1.14393.4467
-PSEdition                      Desktop
-PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
-BuildVersion                   10.0.14393.4467
-CLRVersion                     4.0.30319.42000
-WSManStackVersion              3.0
-PSRemotingProtocolVersion      2.3
-SerializationVersion           1.1.0.1
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           wget -> Invoke-WebRequest
+```
+2. Now to list the file on the user's Desktop:
+```powershell
+Get-ChildItem
+```
+Output:
+```powershell
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        8/30/2018   3:29 AM            693 443
+```
+## BONUS:
+1. For the `Get-ChildItem` we can limit the output to only show file names:
+```powershell
+(Get-ChildItem).Name
+```
+Output:
+```powershell
+443
 ```
 
-Century2's password is: 5.1.14393.4467
+Century2's password is: invoke-webrequest443
