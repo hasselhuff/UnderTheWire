@@ -25,7 +25,7 @@ ssh -l century5 century.underthewire.tech -p 22
 ```
 1. Ran the environmental variable `$env:USERDOMAIN` to get the short name of the domain:
 ```powershell
-Get-ChildItem
+$env:USERDOMAIN
 ```
 Output:
 ```powershell
