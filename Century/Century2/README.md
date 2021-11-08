@@ -30,17 +30,11 @@ The following is needed to SSH with the password from the Slack Channel page:
 > 
 > port: 22
 
-## NOTE:
-> PowerShell version `5.1.22000.282` or later on Windows 10 supports the `ssh` command (the shell may become distorted)
-> 
-> You may also use Putty or ssh from a Linux distribution
-
 I ssh'ed into the server using:
 ```bash
 ssh -l century1 century.underthewire.tech -p 22
 ```
-
-
-
-
-
+1. Ran the system variable for the build version for PowerShell:
+```powershell
+$PSVersionTable
+```
