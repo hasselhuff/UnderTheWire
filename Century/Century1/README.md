@@ -39,7 +39,7 @@ I ssh'ed into the server using:
 ```bash
 ssh -l century1 century.underthewire.tech -p 22
 ```
-1. Ran the global variable for the build version for PowerShell:
+1. Ran the global variable for the details of the installed PowerShell version:
 ```powershell
 $PSVersionTable
 ```
@@ -57,4 +57,4 @@ PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
 ```
 
-Century2's password is: 5.1.14393.4467
+Century2's password is: 10.0.14393.4467
