@@ -1,19 +1,26 @@
-# Bandit Level 0 → Level 1
+# Bandit Level 1 → Level 2
 
-Site: https://underthewire.tech/century
+Site: https://underthewire.tech/century-1
 ## Goal
-> The goal of this level is to log into the game. Do the following in order to achieve this goal.
-> 
-> 1. Obtain the initial credentials via the #StartHere channel on our Slack (link). Once you are in the channel, scroll to top to see the credentials.
-> 
-> 2. After obtaining the credentials, connect to the server via SSH. You will need a SSH client such as Putty. 
-> The host that you will be connecting to is century.underthewire.tech, on port 22.
-> 
-> 3. When prompted, use the credentials for the applicable game found in the #StartHere Slack channel.
-> 
-> 4. You have successfully connected to the game server when your path changes to “PS C:\Users\Century1\desktop>”.
------------------
+> The password for Century2 is the build version of the instance of PowerShell installed on this system.
 
+## NOTE:
+> – The format is as follows: **.*.*****.****
+> 
+> – Include all periods
+> 
+> – Be sure to look for build version and NOT PowerShell version
+
+## IMPORTANT:
+> Once you feel you have completed the Century1 challenge, start a new connection to the server, 
+> 
+> and log in with the username of Century2 and this password will be the answer from Century1. 
+> 
+> If successful, close out the Century1 connection and begin to solve the Century2 challenge. 
+> 
+> This concept is repeated over and over until you reach the end of the game.
+-----------------
+After you read the starting page at [Century](https://underthewire.tech/century)
 The following is needed to SSH with the password from the Slack Channel page:
 > username: century1
 > 
@@ -32,8 +39,22 @@ I ssh'ed into the server using:
 ```bash
 ssh -l century1 century.underthewire.tech -p 22
 ```
+1. Ran the global variable for the build version for PowerShell:
+```powershell
+$PSVersionTable
+```
+2. The above gave this output:
+```powershell
+Name                           Value
+----                           -----
+PSVersion                      5.1.14393.4467
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.14393.4467
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+```
 
-
-
-
-
+Century2's password is: 5.1.14393.4467
