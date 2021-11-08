@@ -12,7 +12,7 @@ Site: https://underthewire.tech/century-2
 > – The password will be lowercase no matter how it appears on the screen.
 -----------------
 
-The following is needed to SSH with the password from the Slack Channel page:
+The following is needed to SSH:
 > username: century2
 > 
 > password: 10.0.14393.4467
