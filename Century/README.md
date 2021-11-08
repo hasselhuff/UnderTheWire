@@ -12,5 +12,4 @@
 * [Century11 -> Century12](Century11)
 * [Century12 -> Century13](Century12)
 * [Century13 -> Century14](Century13)
-* [Century14 -> Century15](Century14)
-* [Century15 -> End](Century15)
+* [Century14 -> Century15 (Final)](Century14)
