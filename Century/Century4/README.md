@@ -38,7 +38,7 @@ d-----        3/14/2021   9:11 PM                Open     Me
 -a----         7/9/2021   6:07 PM            272 file.txt
 -a----        8/24/2021  12:17 AM           1486 files.txt
 ```
-2. Ran `Get-ChildItem` on `Can You Open Me` but wrapped the file name with `'` to escape the spaces and make the sentence a string:
+2. Ran `Get-ChildItem` on `Can You Open Me` but wrapped the file name with `'` to escape the spaces and make the sentence a string. I wrapped the entire command with `().Name` to ouput only the `Name` attribute:
 ```powershell
 (Get-ChildItem 'Can You Open Me').Name
 ```
