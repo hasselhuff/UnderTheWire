@@ -38,3 +38,18 @@ ssh -l century1 century.underthewire.tech -p 22
 ```powershell
 $PSVersionTable
 ```
+2. The above gave this output:
+```powershell
+Name                           Value
+----                           -----
+PSVersion                      5.1.14393.4467
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.14393.4467
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+```
+
+Century2's password is: 5.1.14393.4467
