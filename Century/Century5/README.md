@@ -45,6 +45,7 @@ We can chain both commands to output the password in one command:
 $env:USERDOMAIN + (Get-ChildItem).Name
 ```
 Since the output of both are strings we can use the `+` to append the outputs together
+>
 Output
 ```powershell
 underthewire3347
