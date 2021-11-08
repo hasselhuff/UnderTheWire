@@ -1,4 +1,4 @@
-# Bandit Level 14 → Level 15
+# Bandit Level 14 → Level 15 (Final)
 
 Site: https://underthewire.tech/century-14
 ## Goal
