@@ -5,9 +5,11 @@ Site: https://underthewire.tech/century-1
 > The password for Century2 is the build version of the instance of PowerShell installed on this system.
 
 ## NOTE:
-– The format is as follows: **.*.*****.****
-– Include all periods
-– Be sure to look for build version and NOT PowerShell version
+> – The format is as follows: **.*.*****.****
+> 
+> – Include all periods
+> 
+> – Be sure to look for build version and NOT PowerShell version
 
 ## IMPORTANT:
 > Once you feel you have completed the Century1 challenge, start a new connection to the server, 
