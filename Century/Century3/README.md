@@ -5,7 +5,7 @@ Site: https://underthewire.tech/century-3
 > The password for Century4 is the number of files on the desktop.
 -----------------
 
-The following is needed to SSH with the password from the Slack Channel page:
+The following is needed to SSH:
 > username: century3
 > 
 > password: invoke-webrequest443
