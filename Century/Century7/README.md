@@ -30,6 +30,7 @@ ssh -l century7 century.underthewire.tech -p 22
 ## Note:
 * Like Linux, the homepath for a user is in the directory named after the user in the user's folder. Where in Linux it would have been `/home/century7` in windows it is `C:\Users\century7`
 * I used the `().FullName` in order for my output to only show the full path to the file that matches:
+>
 Output:
 ```powershell
 C:\users\century7\Downloads\Readme.txt
