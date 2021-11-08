@@ -46,7 +46,7 @@ $env:USERDOMAIN + (Get-ChildItem).Name
 ```
 Since the output of both are strings we can use the `+` to append the outputs together
 >
-Output
+Output:
 ```powershell
 underthewire3347
 ```
