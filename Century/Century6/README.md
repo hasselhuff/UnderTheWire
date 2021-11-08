@@ -5,7 +5,7 @@ Site: https://underthewire.tech/century-6
 > The password for Century7 is the number of folders on the desktop.
 -----------------
 
-The following is needed to SSH with the password from the Slack Channel page:
+The following is needed to SSH:
 > username: century6
 > 
 > password: underthewire3347
