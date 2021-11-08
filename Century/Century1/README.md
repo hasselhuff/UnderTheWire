@@ -25,6 +25,7 @@ The following is needed to SSH with the password from the Slack Channel page:
 
 ## NOTE:
 > PowerShell version `5.1.22000.282` or later on Windows 10 supports the `ssh` command (the shell may become distorted)
+> 
 > You may also use Putty or ssh from a Linux distribution
 
 I ssh'ed into the server using:
