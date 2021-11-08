@@ -46,7 +46,7 @@ ProcessId Name     StartMode State   Status ExitCode
 ## NOTE:
 * We use `{}` to wrap our filter 
 * `$_.Name` is only applying the filter on every result's Name property that is being piped into the `Where-Object`
-3. Now to Access the Description property, split each word into it's own line, select only the 10th word, and make that work lowercase:
+3. Now to Access the Description property, split each word into it's own line, select only the 10th word, and make that word lowercase:
 ```powershell
 (((Get-CimInstance Win32_Service | Where-Object {$_.Name -match "wuauserv"}).Description).Split(" ")[9]).ToLower()
 ```
